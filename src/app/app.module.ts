@@ -7,6 +7,7 @@ import { LandingComponent } from './landing/landing.component';
 import { NavbarComponent } from './navbar/navbar.component';
 import { NotFoundComponent } from './not-found/not-found.component';
 import { ProfileComponent } from './profile/profile.component';
+import { DateCountPipe } from './date-count.pipe';
 
 @NgModule({
   declarations: [
@@ -14,7 +15,8 @@ import { ProfileComponent } from './profile/profile.component';
     LandingComponent,
     NavbarComponent,
     NotFoundComponent,
-    ProfileComponent
+    ProfileComponent,
+    DateCountPipe
   ],
   imports: [
     BrowserModule,
