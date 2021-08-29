@@ -1,0 +1,22 @@
+#text{
+  background-image: url("/GitSearch/src/assets/6efb9bc5d143-article-190612-github-body-text.jpg");
+}
+
+.container-fluid {
+  margin-top: 15%;
+  font-weight: 700;
+}
+
+#welcome{
+color: #515358;
+font-size: 45pt;
+margin-bottom: 2%;
+}
+.description{
+    color:#515358;
+}
+
+.icon{
+  font-size: 70px;
+  color: #515358;
+}
