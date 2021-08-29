@@ -1,4 +1,7 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, EventEmitter, OnInit, Output } from '@angular/core';
+import {  } from "module";
+import { User } from '../user';
+import { ShowProfileService } from '../show-profile.service';
 
 @Component({
   selector: 'app-profile',
@@ -7,9 +10,46 @@ import { Component, OnInit } from '@angular/core';
 })
 export class ProfileComponent implements OnInit {
 
-  constructor() { }
+  // searchQuery! :string;
+  [x: string]: any;
+  user!: User;
+  username!: string;
+  repos: any;
+  userProfile: any;
+  followers: any;
+  following: any;
 
-  ngOnInit(): void {
+
+
+  constructor(private showProfile: ShowProfileService) {
+    this.showProfile = showProfile;
+    this.usr = this.showProfile.user
+    this.repo = this.showProfile.repo;
+  }
+
+  search(username: string) {
+    this.showProfile.findUser(username);
+    this.showProfile.getProfileData(username)
+      .subscribe(profile => {
+        // console.log(profile)
+        this.userProfile = profile;
+      }, error => {
+        // this.notFound = !this.notFound;
+      });
+    this.username = '';
+    this.showProfile.getRepoData(username)
+      .subscribe(repos => {
+        this.repos = repos;
+      });
+  }
+
+  ngOnInit() {
+    // username: string = 'jLuseno161'
+    this.search('JAMAL-MOHAMED-JALDESA-2893');
+
   }
 
 }
+
+
+
