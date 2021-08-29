@@ -7,12 +7,12 @@ import { ProfileComponent } from './profile/profile.component';
 const routes: Routes = [
   { 
     path: '',
-     component: LandingComponent
+     component: ProfileComponent
    },
 
   {
-     path: 'profile',
-      component: ProfileComponent
+     path: 'about',
+      component: LandingComponent
    },
   {
      path: '**',
