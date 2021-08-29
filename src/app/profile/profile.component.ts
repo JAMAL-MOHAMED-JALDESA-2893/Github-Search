@@ -10,7 +10,7 @@ import { ShowProfileService } from '../show-profile.service';
 })
 export class ProfileComponent implements OnInit {
 
-  // searchQuery! :string;
+  
   [x: string]: any;
   user!: User;
   username!: string;
@@ -31,10 +31,10 @@ export class ProfileComponent implements OnInit {
     this.showProfile.findUser(username);
     this.showProfile.getProfileData(username)
       .subscribe(profile => {
-        // console.log(profile)
+        
         this.userProfile = profile;
       }, error => {
-        // this.notFound = !this.notFound;
+        
       });
     this.username = '';
     this.showProfile.getRepoData(username)
@@ -44,7 +44,7 @@ export class ProfileComponent implements OnInit {
   }
 
   ngOnInit() {
-    // username: string = 'jLuseno161'
+    
     this.search('JAMAL-MOHAMED-JALDESA-2893');
 
   }
