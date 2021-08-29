@@ -1,10 +1,10 @@
 nav{
-  background-color: #27492c;
+  background-color: #515358;
   color: white;
 }
 
 .nav-item nav-link{
-  color:rgb(64, 92, 13);
+  color:#515358;
   float:right;
   font-family: 'Lobster Two', cursive;
 }

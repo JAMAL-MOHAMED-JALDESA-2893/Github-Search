@@ -22,7 +22,7 @@
 
 .f1 {
   padding-left: 2%;
-  color: rgb(22, 21, 21);
+  color: #515358;
 }
 
 .repoLabel {
@@ -33,12 +33,12 @@
   font-size: 18px;
   font-weight: 500;
   margin-top: 10%;
-  color: #1a2555;
+  color: #515358;
  
 }
 
 .uname {
-  color: #1a2555;
+  color: #515358;
   font-weight: 700;
   font-size: 30px;
 }
