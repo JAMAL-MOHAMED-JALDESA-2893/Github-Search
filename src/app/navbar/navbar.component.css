@@ -1,0 +1,15 @@
+nav{
+  background-color: #27492c;
+  color: white;
+}
+
+.nav-item nav-link{
+  color:rgb(64, 92, 13);
+  float:right;
+  font-family: 'Lobster Two', cursive;
+}
+
+.navbar-nav{
+  display: flex;
+  justify-content: flex-end;
+}
